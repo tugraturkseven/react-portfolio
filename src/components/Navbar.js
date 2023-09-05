@@ -14,7 +14,7 @@ function Navbar({ changeTheme }) {
         }
     }
     return (
-        <div className="navbar bg-base-100 scroll-smooth">
+        <div className="navbar bg-base-100 scroll-smooth max-w-sm xs:max-w-full">
             <div className='navbar-start'></div>
             <div className="navbar-center">
                 <a className="btn btn-ghost normal-case text-md" href='#hero'>About</a>

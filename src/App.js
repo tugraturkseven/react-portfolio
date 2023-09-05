@@ -47,7 +47,7 @@ function App() {
 
 
   return (
-    <div data-theme={theme} className="min-h-screen">
+    <div data-theme={theme} className="min-h-screen max-w-md overscroll-none xs:max-w-full ">
       <ToastContainer
         position="top-center"
         autoClose={5000}

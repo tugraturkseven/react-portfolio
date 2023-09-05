@@ -13,7 +13,7 @@ function Work() {
 
             <div className='flex flex-row flex-wrap justify-center items-center gap-4'>
 
-                <div className="card w-96 h-52 shadow-lg">
+                <div className="card w-80 h-52 shadow-lg sm:w-96">
                     <a href="https://github.com/tugraturkseven/travisor" target='_'>
                         <div className="card-body">
                             <h2 className="card-title">Travisor</h2>
@@ -28,7 +28,7 @@ function Work() {
                     </a>
                 </div>
 
-                <div className="card w-96  h-52 shadow-lg">
+                <div className="card w-80 h-52 shadow-lg sm:w-96">
                     <a href="https://github.com/tugraturkseven/capstonemobileapp">
                         <div className="card-body">
                             <h2 className="card-title">Capstone Mobile App</h2>
@@ -46,7 +46,7 @@ function Work() {
 
 
 
-                <div className="card w-96  h-52 shadow-lg">
+                <div className="card w-80 h-52 shadow-lg sm:w-96">
                     <a href="https://github.com/tugraturkseven/majnoon-website">
                         <div className="card-body">
                             <h2 className="card-title">E-Commerce App</h2>
@@ -64,7 +64,7 @@ function Work() {
                     </a>
                 </div>
 
-                <div className="card w-96  h-52 shadow-lg">
+                <div className="card w-80 h-52 shadow-lg sm:w-96">
                     <a href="https://github.com/tugraturkseven/js-analog-clock">
                         <div className="card-body">
                             <h2 className="card-title">Analog Clock</h2>
