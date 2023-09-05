@@ -18,6 +18,7 @@ function Contact({ notify }) {
 
     const sendEmail = (e) => {
         e.preventDefault(); // prevents the page from reloading when you hit “Send”
+        notify('loading');
 
         emailjs.sendForm(service_id, template_id, formRef.current, service_key)
             .then((result) => {

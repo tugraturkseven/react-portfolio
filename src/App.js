@@ -31,6 +31,17 @@ function App() {
         progress: undefined,
         theme: (theme === 'pastel') ? 'light' : 'dark'
       });
+    } else if (stat === 'loading') {
+      toast.info('Sending message...', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        draggable: true,
+        pauseOnHover: false,
+        progress: undefined,
+        theme: (theme === 'pastel') ? 'light' : 'dark'
+      });
     } else {
       toast.error('Message failed to send. Please try again later.', {
         position: "top-center",
