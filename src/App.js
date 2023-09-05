@@ -1,6 +1,8 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero"
 import Work from "./components/Work";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 import { useState } from "react";
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
       <Navbar changeTheme={changeTheme} />
       <Hero />
       <Work />
+      <Resume />
+      <Contact />
     </div>
   );
 }

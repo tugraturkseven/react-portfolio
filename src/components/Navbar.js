@@ -14,13 +14,13 @@ function Navbar({ changeTheme }) {
         }
     }
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 scroll-smooth">
             <div className='navbar-start'></div>
             <div className="navbar-center">
-                <a className="btn btn-ghost normal-case text-md">About</a>
-                <a className="btn btn-ghost normal-case text-md">Work</a>
-                <a className="btn btn-ghost normal-case text-md">Resume</a>
-                <a className="btn btn-ghost normal-case text-md">Contact</a>
+                <a className="btn btn-ghost normal-case text-md" href='#hero'>About</a>
+                <a className="btn btn-ghost normal-case text-md" href='#work'>Work</a>
+                <a className="btn btn-ghost normal-case text-md" href='#resume'>Resume</a>
+                <a className="btn btn-ghost normal-case text-md" href='#contact'>Contact</a>
 
             </div>
             <div className="navbar-end">
