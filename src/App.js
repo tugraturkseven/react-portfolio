@@ -4,6 +4,8 @@ import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -17,13 +19,52 @@ function App() {
     }
   }
 
+  const notify = (stat) => {
+    if (stat === 'success') {
+      toast.success('Message sent successfully!', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        draggable: true,
+        pauseOnHover: true,
+        progress: undefined,
+        theme: (theme === 'pastel') ? 'light' : 'dark'
+      });
+    } else {
+      toast.error('Message failed to send. Please try again later.', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        draggable: true,
+        pauseOnHover: true,
+        progress: undefined,
+        theme: (theme === 'pastel') ? 'light' : 'dark'
+      });
+    }
+  };
+
+
   return (
     <div data-theme={theme} className="min-h-screen">
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
       <Navbar changeTheme={changeTheme} />
       <Hero />
       <Work />
       <Resume />
-      <Contact />
+      <Contact notify={notify} />
     </div>
   );
 }

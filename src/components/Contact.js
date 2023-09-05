@@ -5,8 +5,7 @@ import emailjs from "@emailjs/browser";
 import { useRef, useEffect } from "react";
 
 
-
-function Contact() {
+function Contact({ notify }) {
     const service_key = process.env.REACT_APP_SERVICE_KEY;
     const template_id = process.env.REACT_APP_TEMPLATE_ID;
     const service_id = process.env.REACT_APP_SERVICE_ID;
@@ -23,10 +22,10 @@ function Contact() {
         emailjs.sendForm(service_id, template_id, formRef.current, service_key)
             .then((result) => {
                 // show the user a success message
-                console.log(result.text);
+                notify('success');
             }, (error) => {
                 // show the user an error
-                console.log(error.text);
+                notify('error');
             });
     };
     return (
