@@ -13,7 +13,7 @@ function App() {
 
   const changeTheme = () => {
     if (theme === 'pastel') {
-      setTheme('dark')
+      setTheme('business')
     } else {
       setTheme('pastel')
     }
@@ -73,7 +73,7 @@ function App() {
       />
       <Navbar changeTheme={changeTheme} />
       <Hero />
-      <Work />
+      <Work theme={theme} />
       <Resume />
       <Contact notify={notify} />
     </div>

@@ -16,7 +16,7 @@ function Resume() {
                 </div>
 
                 <div className="card place-items-center m-auto sm:m-0 w-48">
-                    <p className="text-md font-light">I believe that i have couple of milestones through my journey. The passion of coding has met with me at my early ages. After that time, i designed a path for my future and now i am following it. As it mentioned left side, i'm on my career start now! Here you can check out my <a className="link link-error font-bold" href={resume} target='_'>resume</a> if you have something for me! :)</p>
+                    <p className="text-md font-light">I've reached several important milestones in my journey. I've been passionate about coding since a young age and have carefully planned my career path, which I'm now actively pursuing. As mentioned, I'm just starting my career. Feel free to take a look at my <a className="link link-error font-bold" href={resume} target='_'>resume</a> if you have any opportunities that match my skills and goals.</p>
 
                 </div>
             </div>
