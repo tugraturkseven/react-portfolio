@@ -75,7 +75,7 @@ function Work({ theme }) {
                                 <NodeJSIcon />
                             </div>
 
-                            <p>An IMDB listing web site that developed via React. Includes series, movies and user favorites.</p>
+                            <p>A task manager application based on analog clock, to-do list and and alarms.</p>
 
                         </div>
                     </a>
