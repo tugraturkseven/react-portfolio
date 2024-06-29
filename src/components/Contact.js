@@ -18,6 +18,12 @@ function Contact({ notify }) {
 
     const sendEmail = (e) => {
         e.preventDefault(); // prevents the page from reloading when you hit “Send”
+        if (!formRef.current.user_name.value || !formRef.current.user_email.value || !formRef.current.topic.value || !formRef.current.message.value) {
+            notify('empty');
+            return;
+        }
+
+
         notify('loading');
 
         emailjs.sendForm(service_id, template_id, formRef.current, service_key)
