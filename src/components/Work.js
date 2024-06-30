@@ -37,7 +37,29 @@ function Work({ theme }) {
             </div>
           </a>
         </div>
+        <div
+          className={`card w-80 h-52 sm:w-96  ${
+            theme === "business"
+              ? "border-l-2 rounded-2xl border-l-gray-600 border-b-2 border-b-gray-600"
+              : "shadow-lg "
+          }`}
+        >
+          <a href="https://github.com/tugraturkseven">
+            <div className="card-body">
+              <h2 className="card-title">Reservation App</h2>
+              <div className="flex flex-row space-x-3">
+                <ReactNativeIcon />
+                <JavascriptIcon />
+                <MongodbIcon />
+              </div>
 
+              <p>
+                SaaS product to handle and manage reservations of a astroturf
+                pitch businesses.
+              </p>
+            </div>
+          </a>
+        </div>
         <div
           className={`card w-80 h-52 sm:w-96  ${
             theme === "business"
